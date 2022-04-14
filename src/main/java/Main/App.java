@@ -3,7 +3,7 @@ package Main;
 import java.util.Scanner;
 public class App {
     public static void main(String[] args) {
-        /*
+
          //Declare e inicie 2 variables que permitan realizar y mostrar en consola las operaciones basicas matetematicas
 
         int  $numero1 = 20;
@@ -13,19 +13,19 @@ public class App {
         System.out.println("la resta es :" + ($numero1 - $numero2));
         System.out.println("la multiplicación es :"+ ($numero1 * $numero2));
         System.out.println("la división es : " + ($numero1 / $numero2));
-           */
+
 
 
         //declare e inicie 4 variables e indique el promedio de las 4
 
-      /*  int nota1 = 10, nota2 = 20, nota3 = 10, nota4 = 20;
+        int nota1 = 10, nota2 = 20, nota3 = 10, nota4 = 20;
         int suma = nota1 + nota2 + nota3 + nota4;
         int promedio = suma/4;
         System.out.println("el prmedio de las cuatro notas es "+ promedio);
-        */
+
 
         //Declare e inicie 3 variables enteras y compare cual de las 3 es la mayor.
-       /* int valor1 = 50, valor2 = 30, valor3 = 20;
+        int valor1 = 50, valor2 = 30, valor3 = 20;
         if (valor1 > valor2 || valor1 > valor3){
             System.out.println("el valor mas alto es :"+valor1);
 
@@ -34,13 +34,13 @@ public class App {
             System.out.println("el valor mas alto es :"+valor2);
         }else if(valor3> valor1 || valor3 > valor2){
             System.out.println("el valor mas alto es :"+valor3);
-        }*/
+        }
 
        // Declare e inicie 2 variables que permitan realizar y mostrar en consola las operaciones básicas matemáticas
         // (suma, resta,división y multiplicación) pero con la opción de elegir cual operación realizar.
 
         Scanner cap = new Scanner (System.in);
-      /*  int $num1;
+        int $num1;
         int $num2;
         System.out.println("escoja la operación a realizar" +
                 "\n 1. Suma" +
@@ -82,7 +82,7 @@ public class App {
             $num2 = cap.nextInt();
             int total = $num1 / $num2;
             System.out.println("el total de la división es : "+total);
-        }*/
+        }
 
         //  Del ejercicio anterior hacerlo con switch y que pueda aceptar el carácter ‘s’ para sumar,
         //  ‘r’ para restar, ‘m’ para multiplicar y ‘d’ para dividir
@@ -139,5 +139,7 @@ public class App {
                 System.out.println("opción incorrecta");
                 break;
         }
+
+
     }
 }
