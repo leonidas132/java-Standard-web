@@ -7,7 +7,7 @@ import utilidades.Document;
 
 public class App2 {
     public static void main(String[] args) {
-        
+
         Automobil auto = new Automobil( "automovil","rojo-black",4,new Document("Targeta propiedad","12FF","Activo"),"motor v8","dos puertas");
         System.out.println(auto.toString());
         System.out.println(" ");

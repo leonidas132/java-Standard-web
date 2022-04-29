@@ -2,7 +2,7 @@ package Main;
 
 import java.util.Scanner;
 
-public class ciclos {
+public class Credenciales {
     public static void main(String[] args) {
         // ciclo while
 
@@ -24,7 +24,7 @@ public class ciclos {
         for (int j = 1; j <= 15; j++){
             System.out.println(j);
         }*/
-
+        System.out.println("Hola\nMundo");
         Scanner cap = new Scanner(System.in);
         String $usuario = "pepe";
         String $clave = "mojica";
