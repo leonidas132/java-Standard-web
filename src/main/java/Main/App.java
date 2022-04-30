@@ -1,22 +1,71 @@
 package Main;
 
-import entidad.Curso;
-import entidad.Documento;
-import entidad.Studiante;
-import entidad.Persona;
+import entidad.ProductosPerecederos;
+
+import java.util.ArrayList;
+import java.util.Scanner;
 
 public class App {
     public static void main(String[] args) {
+        Scanner cap = new Scanner(System.in);
+        ArrayList<ProductosPerecederos> ListaPerecedero = new ArrayList<>();
+        String descricion;
+        Float precio;
+        Integer cantidaInvetario;
+        int diasVence;
+
+        int registreProducto;
+        System.out.println("registre la cantidad de productos a comprar");
+        registreProducto = cap.nextInt();
+        int i = 0;
+        do{
+            System.out.println("escoja el tipo de producto: " +
+                    "\n 1. Productos perecederos" +
+                    "\n 2. Productos No perecederos" +
+                    "\n 3. Ofertas" +
+                    "\n 0. Salir");
+            System.out.println("ingrese la opcion ");
+            int opc ;
+            opc = cap.nextInt();
+            switch (opc){
+                case 1:
+                    System.out.println("ingrese un producto a la vez");
+                    cap.nextLine();
+                    System.out.println("nombre del producto");
+                    descricion = cap.nextLine();
+                    System.out.println("precio del producto");
+                    precio = cap.nextFloat();
+                    System.out.println("cantidad del producto en inventario");
+                    cantidaInvetario = cap.nextInt();
+                    System.out.println("cantidad de dias para vencer ");
+                    diasVence = cap.nextInt();
+                    ProductosPerecederos perecedero = new ProductosPerecederos(descricion,precio,cantidaInvetario,diasVence);
+                    ListaPerecedero.add(perecedero);
+                    break;
+                case 2:
+                    System.out.println("en construcccion");
+                    break;
+                case 3:
+                    System.out.println("productos en ofertas");
+                    break;
+                case 0:
+                    System.out.println("Hasta pronto!");
+                    break;
+            }
 
 
-        Curso [] curso = {new Curso("code1","java")};
-        Studiante estudiante = new Studiante("pepe","mogica",new Documento("din",1245),29,curso);
-        //estudiante.imprimeID();
-        System.out.println(estudiante);
-        Studiante estudiante1 = new Studiante("pepe","mogica",new Documento("din",1247),28,curso);
-       // estudiant1.imprimeID(); //podemos usar nuestro metodo imprimir
-        System.out.println(estudiante1);
-        Studiante estudiante2 = new Studiante("pepe","mogica",new Documento("din",1246),26,curso);
-        System.out.println(estudiante2);
+             i++;
+        }while (i < registreProducto);
+
+
+
+
+
     }
+
+    // public static ProductosPerecederos productosDescuento (ProductosPerecederos rebaja ){
+
+    //}
+
+
 }
