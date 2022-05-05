@@ -22,8 +22,11 @@ public class ProductosPerecederos extends Producto {
 
     @Override
     public String toString() {
-        return "ProductosPerecederos{" +
-                "cantidadDiasVence=" + cantidadDiasVence
+        return "Productos en descuentos: '\n" +
+                "\n Nombre Producto :"+ getDescricion() +
+                "\n Antes : $"+getPrecio() +
+                "\n Cantidad en Inventario :" + getCantidadEnInventario() +
+                "\n Dias para vencer" + cantidadDiasVence
                 ;
     }
     float descuento = 0.3f;
@@ -44,6 +47,7 @@ public class ProductosPerecederos extends Producto {
                                "Ha este producto se le aplica el descuento " +descuento +"%"+ "" +
                                "\npor tener menos de 10 dias para vencer :\n" +
                                 "*-----------------------------------------------------------------*" +
+                               "\n|Nombre Producto      :"+" ------------------"+getDescricion()+" |"+
                                "\n|precio sin descuento : "+"----------------------"+getPrecio()+" |" +
                                "\n|precio con descuento : "+"-----------------------"+"$"+total +" |");
             System.out.println("*----------------------------------------------------------------*");

@@ -1,21 +1,21 @@
 package entidad;
 
-public abstract class Persona {
+public abstract class Cliente {
 
     public String nombre;
     public String apellido;
     public Documento documento;
-    public int edad;
 
 
-    public Persona() {
+
+    public Cliente() {
     }
 
-    public Persona( String nombre, String apellido, Documento documento, int edad){
+    public Cliente(String nombre, String apellido, Documento documento){
         this.nombre = nombre;
         this.apellido = apellido;
         this.documento = documento;
-        this.edad = edad;
+
 
     }
 
@@ -45,22 +45,13 @@ public abstract class Persona {
         this.documento = documento;
     }
 
-    public int getEdad() {
-        return edad;
-    }
-
-    public void setEdad(int edad) {
-        this.edad = edad;
-    }
-
     @Override
     public String toString() {
         return "\n" +
 
                 ", nombre:'" + nombre + '\'' +
                 ", apellido:'" + apellido + '\'' +
-                ", documento:" + documento +
-                ", edad:" + edad ;
+                ", documento:" + documento ;
     }
 
     public abstract void imprimeID();
