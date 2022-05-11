@@ -2,11 +2,11 @@ package entidad;
 
 import utilidades.CalculaPrecio;
 
-public abstract  class Producto implements CalculaPrecio {
+public abstract class Producto implements CalculaPrecio {
     private String descricion ;
     private Float precio;
     private Integer cantidadEnInventario;
-
+    static int id = 0;
     public Producto() {
 
     }
@@ -15,6 +15,7 @@ public abstract  class Producto implements CalculaPrecio {
         this.descricion = descricion;
         this.precio = precio;
         this.cantidadEnInventario = cantidadEnInventario;
+        id++;
     }
 
     public String getDescricion() {

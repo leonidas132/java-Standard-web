@@ -1,43 +1,47 @@
 package entidad;
 
 public class productoNoPerecedero extends Producto {
-     float cantaComprada;
-
+     float cantidaComprada;
+     int id = 0;
     public productoNoPerecedero() {
     }
 
-    public productoNoPerecedero(String descricion, Float precio, Integer cantidadEnInventario, float cantaComprada) {
+    public productoNoPerecedero(String descricion, Float precio, Integer cantidadEnInventario, float cantidaComprada) {
         super(descricion, precio, cantidadEnInventario);
-        this.cantaComprada = cantaComprada;
+        this.cantidaComprada= cantidaComprada;
+        id++;
     }
 
-    public float getCantaComprada() {
-        return cantaComprada;
+    public float getCantidaComprada() {
+        return cantidaComprada;
     }
 
     public void setCantaComprada(float cantaComprada) {
-        this.cantaComprada = cantaComprada;
+        this.cantidaComprada = cantaComprada;
     }
 
     @Override
     public String toString() {
         return "productoNoPerecedero{" +
-                "cantaComprada=" + cantaComprada +
+                "cantaComprada=" + cantidaComprada +
                 '}';
     }
 
+
+
     @Override
-    public float precioInventario(Object valor) {
-
-            float total =(float) cantaComprada * getPrecio() ;
-            System.out.println("----------------------------------------------------------");
-            System.out.println("valor total  producto por unidad : "+ getPrecio()  +
-                    "\nCantidad en inventario: " +getCantidadEnInventario() +
-                    "\nvalor de cantidad por inventario : "+ total);
-            System.out.println("-----------------------------------------------------------");
-
-
-        return 0;
+    public void getprecioInventario() {
+        float totalApagar = cantidaComprada * getPrecio();
+        System.out.println("----------------------------------------------------------");
+        System.out.println("Nombre producto no perecedero : " +getDescricion()  +
+                        "\n|Precio del producto: " +getPrecio() +
+                        "\n|valor de cantidad comprada: "+ cantidaComprada +
+                        "\n|valor total a pagar : "+ totalApagar );
+        System.out.println("-----------------------------------------------------------");
     }
 
+    @Override
+    public void getId() {
+        System.out.println("ID del producto :"+id);
+    }
 }
