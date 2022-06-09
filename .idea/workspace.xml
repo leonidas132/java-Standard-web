@@ -5,17 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dc75dbc7-98e4-45f7-b600-6045d9cd3343" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mariadb_jdbc_mariadb_java_client_3_0_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/App_base_datos/APP.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/entidades_base_datos/AreaJefe.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/entidades_base_datos/Cliente.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/entidades_base_datos/Cuenta.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/entidades_base_datos/Empleado.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/entidades_base_datos/EmpleadoJefe.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/entidades_base_datos/Sucursal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/implementa_base_dato/ImplementaArea.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/implementa_base_dato/implementaCliente.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/interefaces_base_datos/Conexion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/interefaces_base_datos/DAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jetbrains_annotations_23_0_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entidad/Producto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entidad/Producto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entidad/ProductosPerecederos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entidad/ProductosPerecederos.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entidad/productoNoPerecedero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entidad/productoNoPerecedero.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utilidades/CalculaPrecio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utilidades/CalculaPrecio.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Main/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main/App.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/entidad/Persona.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/entidad/ProductosPerecederos.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entidad/ProductosPerecederos.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/entidad/productoNoPerecedero.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entidad/productoNoPerecedero.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/utilidades/CalculaPrecio.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/utilidades/CalculaPrecio.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/WEB1.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +51,13 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
@@ -58,9 +72,23 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
-  <component name="RunManager" selected="Application.App">
+  <component name="RunManager" selected="Application.APP">
+    <configuration name="APP" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="App_base_datos.APP" />
+      <module name="WEB1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="App_base_datos.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main.App" />
       <module name="WEB1" />
@@ -100,19 +128,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="matriz1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main.matriz1" />
-      <module name="WEB1" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Main.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="scaner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main.scaner" />
       <module name="WEB1" />
@@ -128,11 +143,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.APP" />
         <item itemvalue="Application.App" />
         <item itemvalue="Application.scaner" />
         <item itemvalue="Application.Credenciales" />
         <item itemvalue="Application.arreglos" />
-        <item itemvalue="Application.matriz1" />
       </list>
     </recent_temporary>
   </component>
