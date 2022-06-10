@@ -1,17 +1,17 @@
 package entidades_base_datos;
 
-public class AreaJefe {
+public class AreaJefe { // linea object
     private Integer id_area;
     private String nombre;
-    private int id;
+
 
     public AreaJefe() {
     }
 
-    public AreaJefe(Integer id_area, String nombre, int id) {
+    public AreaJefe(Integer id_area, String nombre) {
         this.id_area = id_area;
         this.nombre = nombre;
-        this.id = id;
+
     }
 
     public Integer getId_area() {
@@ -30,20 +30,12 @@ public class AreaJefe {
         this.nombre = nombre;
     }
 
-    public int getId() {
-        return id;
-    }
 
-    public void setId(int id) {
-        this.id = id;
-    }
 
     @Override
     public String toString() {
-        return "AreaJefe{" +
-                "id_area=" + id_area +
-                ", nombre='" + nombre + '\'' +
-                ", id=" + id +
-                '}';
+        return "Area" +
+                "\nid_area:" + id_area +
+                "\nnombre:'" + nombre ;
     }
 }
