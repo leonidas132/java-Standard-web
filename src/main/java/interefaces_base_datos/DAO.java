@@ -10,5 +10,5 @@ public interface DAO <E,K>{  //Data Access Object
     public abstract boolean insertar(E e);
     public abstract boolean modificar(E e);
     public abstract boolean Eliminar (E e);
-    List<E> listar(E e);
+    List<E> listar();
 }

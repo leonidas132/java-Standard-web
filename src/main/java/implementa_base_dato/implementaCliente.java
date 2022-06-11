@@ -13,6 +13,11 @@ import java.util.Objects;
 public class implementaCliente implements DAO<Cliente,Integer>, Conexion{
 
 
+
+    public Cliente buscarId(int id){
+        return null;
+    }
+
     @Override
     public Cliente buscar(Integer id) {
 
@@ -28,12 +33,7 @@ public class implementaCliente implements DAO<Cliente,Integer>, Conexion{
 
     @Override
     public boolean modificar(Cliente cliente) {
-        String sql = "update clientes set nombre,ciudad,direcion where ";
-        try {
-            PreparedStatement preparedStatementModificar =getConexion().prepareStatement(sql);
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
+
 
         return false;
     }
@@ -44,7 +44,7 @@ public class implementaCliente implements DAO<Cliente,Integer>, Conexion{
     }
 
     @Override
-    public List<Cliente> listar(Cliente cliente) {
+    public List<Cliente> listar() {
         return null;
     }
 

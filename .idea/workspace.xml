@@ -5,13 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dc75dbc7-98e4-45f7-b600-6045d9cd3343" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/implementa_base_dato/ImplementarEmpleadoAsignado.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/implementa_base_dato/implementacionEmpleadoJefe.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/App_base_datos/APP.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/App_base_datos/APP.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entidades_base_datos/AreaJefe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entidades_base_datos/AreaJefe.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entidades_base_datos/Empleado.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entidades_base_datos/EmpleadoAsignado.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entidades_base_datos/EmpleadoJefe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entidades_base_datos/EmpleadoJefe.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/implementa_base_dato/ImplementaArea.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/implementa_base_dato/ImplementaArea.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/implementa_base_dato/implementaCliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/implementa_base_dato/implementaCliente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/interefaces_base_datos/DAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/interefaces_base_datos/DAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/App_base_datos/APP.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/App_base_datos/APP.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/entidades_base_datos/AreaJefe.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entidades_base_datos/AreaJefe.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/entidades_base_datos/Empleado.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/entidades_base_datos/EmpleadoJefe.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entidades_base_datos/EmpleadoJefe.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/implementa_base_dato/ImplementaArea.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/implementa_base_dato/ImplementaArea.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/implementa_base_dato/implementaCliente.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/implementa_base_dato/implementaCliente.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/interefaces_base_datos/DAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/interefaces_base_datos/DAO.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
