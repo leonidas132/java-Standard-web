@@ -3,15 +3,17 @@ package App_base_datos;
 import com.sun.source.tree.NewArrayTree;
 import entidades_base_datos.AreaJefe;
 import entidades_base_datos.Cliente;
+import entidades_base_datos.EmpleadoAsignado;
 import entidades_base_datos.EmpleadoJefe;
 import implementa_base_dato.ImplementaArea;
+import implementa_base_dato.ImplementarEmpleadoAsignado;
 import implementa_base_dato.implementaCliente;
 import implementa_base_dato.implementacionEmpleadoJefe;
 
 public class APP { // tranferencia
     public static void main(String[] args) {
-       /* ImplementaArea implementaArea = new ImplementaArea(); // objeto de tipo implementacion
-          // buscar
+       ImplementaArea implementaArea = new ImplementaArea(); // objeto de tipo implementacion
+        /*  // buscar
          AreaJefe arej = implementaArea.buscar("Area Sistemas");
          System.out.println(arej);
 
@@ -52,9 +54,16 @@ public class APP { // tranferencia
 
 
         //Listar
-        for(EmpleadoJefe empleadoJefe:implementacionjefe.listar()){
+       /* for(EmpleadoJefe empleadoJefe:implementacionjefe.listar()){
             System.out.println(empleadoJefe);
-        }
+        }*/
+
+        ImplementarEmpleadoAsignado implementarEmpleadoAsignado = new ImplementarEmpleadoAsignado();
+
+        EmpleadoAsignado empleadoAsignado;
+        empleadoAsignado =implementarEmpleadoAsignado.buscarid(105);
+        System.out.println(empleadoAsignado);
+
     }
 
 }
