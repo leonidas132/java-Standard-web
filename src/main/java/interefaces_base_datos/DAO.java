@@ -4,9 +4,9 @@ import entidades_base_datos.Cliente;
 
 import java.util.List;
 
-public interface DAO <E,K>{  //Data Access Object
+public interface DAO <E>{  //Data Access Object
 
-    public abstract E buscar(K k);
+    public abstract E buscar(int id);
     public abstract boolean insertar(E e);
     public abstract boolean modificar(E e);
     public abstract boolean Eliminar (E e);

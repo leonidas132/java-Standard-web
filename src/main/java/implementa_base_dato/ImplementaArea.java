@@ -11,14 +11,16 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ImplementaArea implements DAO<AreaJefe, String>, Conexion {  //implementacion
+public class ImplementaArea implements DAO<AreaJefe>, Conexion {  //implementacion
     private PreparedStatement preparedStatementBuscar;
     private PreparedStatement preparedStatementInsetar;
     private PreparedStatement preparedStatementEliminar;
     private PreparedStatement preparedStatementModificar;
     private PreparedStatement preparedStatementListar;
+
+
     @Override
-    public AreaJefe buscar(String nombre) {
+    public AreaJefe buscar(int id) {
         AreaJefe AJ = null;
         String sql = "select id_area,nombre from area where nombre =?";
 
@@ -26,7 +28,7 @@ public class ImplementaArea implements DAO<AreaJefe, String>, Conexion {  //impl
             if(preparedStatementBuscar ==null){ // de esta manera precargamos  la sentencia sql
                 preparedStatementBuscar = getConexion().prepareStatement(sql);
             }
-            preparedStatementBuscar.setString(1,nombre);
+            preparedStatementBuscar.setString(1,AJ.getNombre());
 
             ResultSet resultSet = preparedStatementBuscar.executeQuery();
             if(resultSet.next()){
@@ -41,6 +43,8 @@ public class ImplementaArea implements DAO<AreaJefe, String>, Conexion {  //impl
         }
         return AJ;
     }
+
+
 
     @Override
     public boolean insertar(AreaJefe areaJefe) {

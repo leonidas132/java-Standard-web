@@ -10,7 +10,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class implementacionEmpleadoJefe implements DAO<EmpleadoJefe,Integer>, Conexion {
+public class implementacionEmpleadoJefe implements DAO<EmpleadoJefe>, Conexion {
     private PreparedStatement preparedStatementBuscaid;
     private PreparedStatement preparedStatementInsertar;
     private PreparedStatement preparedStatementModificar;
@@ -46,7 +46,7 @@ public class implementacionEmpleadoJefe implements DAO<EmpleadoJefe,Integer>, Co
 
 
     @Override
-    public EmpleadoJefe buscar(Integer integer) {
+    public EmpleadoJefe buscar(int id) {
         return null;
     }
 

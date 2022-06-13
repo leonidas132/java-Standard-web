@@ -10,7 +10,7 @@ import java.sql.SQLOutput;
 import java.util.List;
 import java.util.Objects;
 
-public class implementaCliente implements DAO<Cliente,Integer>, Conexion{
+public class implementaCliente implements DAO<Cliente>, Conexion{
 
 
 
@@ -19,7 +19,7 @@ public class implementaCliente implements DAO<Cliente,Integer>, Conexion{
     }
 
     @Override
-    public Cliente buscar(Integer id) {
+    public Cliente buscar(int id) {
 
         return null;
     }

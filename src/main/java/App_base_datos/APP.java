@@ -1,14 +1,8 @@
 package App_base_datos;
 
 import com.sun.source.tree.NewArrayTree;
-import entidades_base_datos.AreaJefe;
-import entidades_base_datos.Cliente;
-import entidades_base_datos.EmpleadoAsignado;
-import entidades_base_datos.EmpleadoJefe;
-import implementa_base_dato.ImplementaArea;
-import implementa_base_dato.ImplementarEmpleadoAsignado;
-import implementa_base_dato.implementaCliente;
-import implementa_base_dato.implementacionEmpleadoJefe;
+import entidades_base_datos.*;
+import implementa_base_dato.*;
 
 public class APP { // tranferencia
     public static void main(String[] args) {
@@ -59,10 +53,35 @@ public class APP { // tranferencia
         }*/
 
         ImplementarEmpleadoAsignado implementarEmpleadoAsignado = new ImplementarEmpleadoAsignado();
+        //buscar
+      //  EmpleadoAsignado empleadoAsignado;
+       // empleadoAsignado =implementarEmpleadoAsignado.buscarid(104);
+      //  System.out.println(empleadoAsignado);
 
-        EmpleadoAsignado empleadoAsignado;
-        empleadoAsignado =implementarEmpleadoAsignado.buscarid(105);
-        System.out.println(empleadoAsignado);
+        //insertar
+       // EmpleadoAsignado empleadoAsignado1 = new EmpleadoAsignado(107,"josefa","3043882440","2022/06/13",6,"isacc,juan davod ");
+      //  System.out.println(implementarEmpleadoAsignado.insertar(empleadoAsignado1));
+
+        //modificar
+     //  EmpleadoAsignado empleadoAsignado1 = new EmpleadoAsignado(107,"pepa","304388","2021/06/13",5,"misael,jamael,davod ");
+    // System.out.println(implementarEmpleadoAsignado.modificar(empleadoAsignado1));
+
+        //listar
+       // for(EmpleadoAsignado employ : implementarEmpleadoAsignado.listar()){
+      //      System.out.println(employ);
+      //  }
+
+
+        ImplementacionCuenta implementacionCuenta = new ImplementacionCuenta();
+        Cuenta cuenta;
+        cuenta =implementacionCuenta.buscar(5);
+        System.out.println(cuenta);
+
+        Cuenta cuenta1 = new Cuenta(7,"123-1024-190","cuenta corriente");
+        System.out.println(implementacionCuenta.insertar(cuenta1));
+
+
+
 
     }
 
