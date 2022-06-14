@@ -71,18 +71,24 @@ public class APP { // tranferencia
       //      System.out.println(employ);
       //  }
 
-
+        //buscar
         ImplementacionCuenta implementacionCuenta = new ImplementacionCuenta();
         Cuenta cuenta;
         cuenta =implementacionCuenta.buscar(5);
         System.out.println(cuenta);
 
-        Cuenta cuenta1 = new Cuenta(7,"123-1024-190","cuenta corriente");
-        System.out.println(implementacionCuenta.insertar(cuenta1));
+        //insertar
+       // Cuenta cuenta1 = new Cuenta(7,"123-1024-190","cuenta corriente");
+      //  System.out.println(implementacionCuenta.insertar(cuenta1));
 
+        //modificar
+       // Cuenta cuenta1 = new Cuenta(7,"125-1024-1","cuenta Ahorro");
+      //  System.out.println(implementacionCuenta.modificar(cuenta1));
 
-
-
+        for(Cuenta cuenta1:implementacionCuenta.listar()){
+            System.out.println(cuenta1);
+        }
+     
     }
 
 }

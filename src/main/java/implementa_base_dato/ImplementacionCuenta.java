@@ -7,6 +7,7 @@ import interefaces_base_datos.DAO;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.List;
 
 public class ImplementacionCuenta implements DAO<Cuenta>, Conexion {
@@ -66,7 +67,22 @@ public class ImplementacionCuenta implements DAO<Cuenta>, Conexion {
     }
     @Override
     public boolean modificar(Cuenta cuenta) {
-        String sql = "";
+        if (cuenta == null){
+            return false;
+        }
+        String sql = "update cuenta set No_cuenta = ?, tipo_cuenta =? where id_c = ?";
+        try {
+            if(preparedStatementModificar == null) {
+                preparedStatementModificar = getConexion().prepareStatement(sql);
+            }
+            preparedStatementModificar.setString(1,cuenta.getNo_cuenta());
+            preparedStatementModificar.setString(2,cuenta.getTipo_cuenta());
+
+            return preparedStatementModificar.executeUpdate()==1;
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
         return false;
     }
 
@@ -78,7 +94,24 @@ public class ImplementacionCuenta implements DAO<Cuenta>, Conexion {
 
     @Override
     public List<Cuenta> listar() {
-        String sql = "";
-        return null;
+        List<Cuenta> listaCuenta = new ArrayList<>();
+        String sql = "select * from cuenta";
+        try {
+            if(preparedStatementListarr == null){
+                preparedStatementListarr = getConexion().prepareStatement(sql);
+            }
+           ResultSet resultSet = preparedStatementListarr.executeQuery();
+            while(resultSet.next()){
+                Cuenta cuenta = new Cuenta();
+                cuenta.setId_c(resultSet.getInt("id_c"));
+                cuenta.setNo_cuenta(resultSet.getString("No_cuenta"));
+                cuenta.setTipo_cuenta(resultSet.getString("tipo_cuenta"));
+                listaCuenta.add(cuenta);
+            }
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return listaCuenta;
     }
 }
