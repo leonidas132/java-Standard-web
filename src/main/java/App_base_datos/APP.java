@@ -88,7 +88,10 @@ public class APP { // tranferencia
         for(Cuenta cuenta1:implementacionCuenta.listar()){
             System.out.println(cuenta1);
         }
-     
+
+
+        // falta implementar cliente
+        
     }
 
 }
