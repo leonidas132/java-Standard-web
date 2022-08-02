@@ -71,11 +71,11 @@ public class EmpleadoAsignado {
     @Override
     public String toString() {
         return "Empleado Asignado" +
-                "\nid_empleado:" + id_empleado +
-                "\nnombre:" + nombre +
-                "\ntelefon:" + telefono +
-                "\nfecha_ingreso:" + fecha_ingreso +
-                "\nid_jefe:" + id_jefe +
-                "\nname_subor:" + name_subor;
+                "\nId_empleado: " + id_empleado +
+                "\nNombre: " + nombre +
+                "\nTelefon: " + telefono +
+                "\nFecha_ingreso: " + fecha_ingreso +
+                "\nId_jefe: " + id_jefe +
+                "\nName_subor: " + name_subor;
     }
 }

@@ -4,7 +4,8 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
-public interface Conexion { // Data surce
+public interface Conexion {
+    // Data sources
     default Connection getConexion (){
         Connection conexion = null;
         String driver= "org.mariadb.jdbc.Driver" ;

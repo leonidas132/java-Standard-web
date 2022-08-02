@@ -1,4 +1,4 @@
-package Main;
+package implementa_base_dato.Main;
 
 import entidad.Producto;
 import entidad.ProductosPerecederos;

@@ -1,5 +1,5 @@
 package entidades_base_datos;
-
+//  es opcional
 public class AreaJefe { // linea object
     private Integer id_area;
     private String nombre;

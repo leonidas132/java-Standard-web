@@ -114,4 +114,9 @@ public class ImplementacionCuenta implements DAO<Cuenta>, Conexion {
         }
         return listaCuenta;
     }
+
+    public static void main(String[] args) {
+        ImplementacionCuenta implementacionCuenta = new ImplementacionCuenta();
+        System.out.println(implementacionCuenta.buscar(1));
+    }
 }

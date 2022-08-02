@@ -41,8 +41,6 @@ public class Cuenta {
     @Override
     public String toString() {
         return "Cuenta" +
-                "\nid_c: " + id_c +
-                "\nNo_cuenta: " + No_cuenta +
-                "\ntipo_cuenta:" + tipo_cuenta;
+                "\nId_c: " + id_c + "\nNo_Cuenta: " + No_cuenta + "\ntipo_Cuenta:" + tipo_cuenta;
     }
 }

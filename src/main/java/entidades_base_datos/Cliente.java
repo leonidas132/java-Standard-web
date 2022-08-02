@@ -76,11 +76,11 @@ public class Cliente {
     @Override
     public String toString() {
         return "Cliente" +
-                "$id_cliente=" + id_cliente +
-                ", $direccion='" + direccion + '\'' +
-                ", $ciudad='" + ciudad + '\'' +
-                ", nombre='" + nombre + '\'' +
-                ", $Id_empleadoAsignado=" + Id_empleadoAsignado +
-                ", tipo_cuenta='" + id_cuenta;
+                " id_cliente:" + id_cliente +
+                " $direccion: " + direccion + '\'' +
+                " $ciudad: " + ciudad + '\'' +
+                " nombre: " + nombre + '\'' +
+                " $Id_empleadoAsignado: " + Id_empleadoAsignado +
+                " tipo_cuenta: " + id_cuenta;
     }
 }

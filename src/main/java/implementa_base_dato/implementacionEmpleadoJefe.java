@@ -21,7 +21,7 @@ public class implementacionEmpleadoJefe implements DAO<EmpleadoJefe>, Conexion {
 
     public EmpleadoJefe buscarID(int id_jefe){
         EmpleadoJefe empleadoJefe = null;
-        String sql = "select id_jefe, nombre, id_area from empleado_jefe where id_jefe = ? ";
+        String sql = "select nombre, id_area from empleado_jefe where id_jefe = ? ";
         try {
             if(preparedStatementBuscaid == null) {
                 preparedStatementBuscaid = getConexion().prepareStatement(sql);

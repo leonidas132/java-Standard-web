@@ -21,7 +21,7 @@ public class ImplementarEmpleadoAsignado implements DAO<EmpleadoAsignado>, Conex
 
     public EmpleadoAsignado buscarid(int id_empleado){
         EmpleadoAsignado empleadoAsignado = null;
-        String sql = "select id_empleado,nombre,fecha_ingreso,name_subor ,telefono,id_jefe  from empleado where id_empleado =? ";
+        String sql = "select nombre,fecha_ingreso,name_subor ,telefono,id_jefe  from empleado where id_empleado =? ";
         try {
             if(preparedStatementBuscarId == null) {
                 preparedStatementBuscarId = getConexion().prepareStatement(sql);
@@ -31,12 +31,13 @@ public class ImplementarEmpleadoAsignado implements DAO<EmpleadoAsignado>, Conex
             ResultSet resultSet = preparedStatementBuscarId.executeQuery();
             if(resultSet.next()){
                 empleadoAsignado = new EmpleadoAsignado();
-                empleadoAsignado.setId_empleado(resultSet.getInt(1));
-                empleadoAsignado.setNombre(resultSet.getString(2));
-                empleadoAsignado.setFecha_ingreso(resultSet.getString(3));
-                empleadoAsignado.setName_subor(resultSet.getString(4));
-                empleadoAsignado.setTelefono(resultSet.getString(5));
-                empleadoAsignado.setId_jefe(resultSet.getInt(6));
+
+                empleadoAsignado.setNombre(resultSet.getString(1));
+                empleadoAsignado.setFecha_ingreso(resultSet.getString(2));
+                empleadoAsignado.setName_subor(resultSet.getString(3));
+                empleadoAsignado.setTelefono(resultSet.getString(4));
+                empleadoAsignado.setId_jefe(resultSet.getInt(5));
+
 
             }
         } catch (SQLException e) {
@@ -132,5 +133,10 @@ public class ImplementarEmpleadoAsignado implements DAO<EmpleadoAsignado>, Conex
             e.printStackTrace();
         }
         return $empleadoAsignados;
+    }
+
+    public static void main(String[] args) {
+        ImplementarEmpleadoAsignado implementarEmpleadoAsignado = new ImplementarEmpleadoAsignado();
+        System.out.println(implementarEmpleadoAsignado.buscarid(101));
     }
 }

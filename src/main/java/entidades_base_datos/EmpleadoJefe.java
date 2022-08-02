@@ -41,8 +41,8 @@ public class EmpleadoJefe {
     @Override
     public String toString() {
         return "Jefe" +
-                "\nid_jefe:" + id_jefe +
-                "\nnombre:" + nombre  +
-                "\nid_area:" + id_area ;
+                "\nId_jefe :" + id_jefe +
+                "\nNombre :" + nombre  +
+                "\nId_area :" + id_area ;
     }
 }

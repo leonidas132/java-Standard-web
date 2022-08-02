@@ -14,9 +14,7 @@ public class implementaCliente implements DAO<Cliente>, Conexion{
 
 
 
-    public Cliente buscarId(int id){
-        return null;
-    }
+
 
     @Override
     public Cliente buscar(int id) {

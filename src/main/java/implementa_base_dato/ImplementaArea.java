@@ -22,13 +22,13 @@ public class ImplementaArea implements DAO<AreaJefe>, Conexion {  //implementaci
     @Override
     public AreaJefe buscar(int id) {
         AreaJefe AJ = null;
-        String sql = "select id_area,nombre from area where nombre =?";
+        String sql = "select id_area,nombre from area where id_area =?";
 
         try {
             if(preparedStatementBuscar ==null){ // de esta manera precargamos  la sentencia sql
                 preparedStatementBuscar = getConexion().prepareStatement(sql);
             }
-            preparedStatementBuscar.setString(1,AJ.getNombre());
+            preparedStatementBuscar.setInt(1,id);
 
             ResultSet resultSet = preparedStatementBuscar.executeQuery();
             if(resultSet.next()){
@@ -114,5 +114,14 @@ public class ImplementaArea implements DAO<AreaJefe>, Conexion {  //implementaci
         }
 
         return areas ;
+    }
+
+    public static void main(String[] args) {
+        ImplementaArea implementaArea =new ImplementaArea();
+        System.out.println(implementaArea.buscar(1));
+        AreaJefe areaJefe = new AreaJefe(8,"almacen");
+     //   implementaArea.insertar(areaJefe);
+
+        implementaArea.modificar(areaJefe);
     }
 }
